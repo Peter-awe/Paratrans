@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paratrans - Academic Translation Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Paratrans</h1>
+        <div id="api-key-section">
+            <h2>Enter Your DeepSeek API Key</h2>
+            <input type="password" id="api-key-input" placeholder="Enter your DeepSeek API Key">
+            <button id="submit-key">Submit</button>
+            <p class="note">Note: Your API key is securely stored and only used for translation requests.</p>
+        </div>
+
+        <div id="translation-section" class="hidden">
+            <div class="text-columns">
+                <div class="column">
+                    <h3>Source Text</h3>
+                    <textarea id="source-text" placeholder="Enter text to translate..."></textarea>
+                </div>
+                <div class="column">
+                    <h3>Translation</h3>
+                    <div id="translation-result" class="translation-output"></div>
+                    <div id="loading-indicator" class="hidden">Translating...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
